@@ -107,7 +107,7 @@ def menu():
         elif webhook_choice == '3':
             webhook_url = input("Inserisci Webhook: ")
             if validate_webhook(webhook_url):
-                fetch_webhook_info(webhook_url)
+                webhook_info(webhook_url)
             else:
                 print(f"{COLOR_RED}URL webhook non valido.{COLOR_RESET}")
 
